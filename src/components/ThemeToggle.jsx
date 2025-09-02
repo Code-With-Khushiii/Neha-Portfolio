@@ -10,9 +10,14 @@ export const ThemeToggle = () => {
     if (storedTheme === "dark") {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
-    } else {
-      localStorage.setItem("theme", "light");
+    } else if (storedTheme === "light") {
       setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      // Default to dark on first visit
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
     }
   }, []);
 
