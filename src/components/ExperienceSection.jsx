@@ -84,8 +84,8 @@ export const ExperienceSection = () => {
                     <Briefcase className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold">{experience.position}</h3>
-                    <p className="text-primary font-medium">{experience.company}</p>
+                    <h3 className="text-xl font-semibold text-left">{experience.position}</h3>
+                    <p className="text-primary font-medium  text-left">{experience.company}</p>
                   </div>
                 </div>
                 <div className="flex flex-col md:items-end gap-1">
@@ -102,8 +102,8 @@ export const ExperienceSection = () => {
               
               <ul className="space-y-2">
                 {experience.achievements.map((achievement, index) => (
-                  <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="text-primary mt-1">•</span>
+                  <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground text-left">
+                    <span className="text-primary mt-1 text-left">•</span>
                     {achievement}
                   </li>
                 ))}
