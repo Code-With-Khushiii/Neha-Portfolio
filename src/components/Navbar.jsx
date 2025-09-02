@@ -36,10 +36,10 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground"> Neha Senapati </span>{" "}
+          {/* <span className="relative z-10"> */}
+            {/* <span className="text-glow text-foreground"> Neha Senapati </span>{" "}
             Portfolio
-          </span>
+          </span> */}
         </a>
 
         {/* desktop nav */}
